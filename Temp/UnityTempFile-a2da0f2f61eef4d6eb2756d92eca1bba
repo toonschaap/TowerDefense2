@@ -98,6 +98,7 @@
 -define:UNITY_EDITOR_OSX
 -define:ENABLE_NATIVE_ARRAY_CHECKS
 -define:UNITY_TEAM_LICENSE
+'Assets/scripts/Core/Coredeath.cs'
 'Assets/scripts/player/clickspawn.cs'
 -r:'/Applications/Unity/Hub/Editor/2017.1.5f1/Unity.app/Contents/Mono/lib/mono/unity/System.Runtime.Serialization.dll'
 -r:'/Applications/Unity/Hub/Editor/2017.1.5f1/Unity.app/Contents/Mono/lib/mono/unity/System.Xml.Linq.dll'
