@@ -4,11 +4,15 @@ using UnityEngine;
 
 public class EnemyRandomSpawner : MonoBehaviour
 {
-    public int 2;
+    public int PositionOne;
+    public int PositionTwo;
+
+    public int timerOne;
+    public int timerTwo;
     
     public GameObject Enemy;
     GameObject Enemyclone;
-    public float Timer = 2;
+    private float Timer = 0;
     // Use this for initialization
     void Start()
     {
@@ -21,8 +25,8 @@ public class EnemyRandomSpawner : MonoBehaviour
         Timer -= Time.deltaTime;
         if (Timer <= 0f)
         {
-            Enemyclone = Instantiate(Enemy, new Vector3(7.0f, 3.0f, 0), transform.rotation) as GameObject;
-            Timer = Random.Range(2.0f, 3.0f);
+            Enemyclone = Instantiate(Enemy, new Vector3(PositionOne, PositionTwo, 0), transform.rotation) as GameObject;
+            Timer = Random.Range(timerOne, timerTwo);
         }
     }
 }
