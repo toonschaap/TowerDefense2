@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+
 public class clickspawn : MonoBehaviour {
 	public GameObject objectToSpawn;
 	// Use this for initialization
@@ -12,9 +13,8 @@ public class clickspawn : MonoBehaviour {
 	void Update () {
 		if (Input.GetMouseButtonDown(0))
 		{
-            Vector3 spawnPosition = new Vector3(1,1);
-            //GameObject.FindGameObjectWithTag(tag: "Grid")
-            spawnPosition.z = 0.0f;
+			Vector3 spawnPosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+			spawnPosition.z = 0.0f;
 			GameObject objectInstance = Instantiate(objectToSpawn, spawnPosition, Quaternion.Euler(new Vector3(0, 0, 0)));
 		}
 	}
