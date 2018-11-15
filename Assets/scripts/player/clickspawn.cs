@@ -1,8 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-// © 2017 TheFlyingKeyboard and released under MIT License
-// theflyingkeyboard.net
+
 public class clickspawn : MonoBehaviour {
 	public GameObject objectToSpawn;
 	// Use this for initialization
