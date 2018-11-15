@@ -4,9 +4,8 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - enemy
-  - bullet
-  - limit
+  - Grid
+  - Tower
   layers:
   - Default
   - TransparentFX
@@ -16,8 +15,8 @@ TagManager:
   - UI
   - 
   - 
-  - 
-  - 
+  - 1
+  - 2
   - 
   - 
   - 

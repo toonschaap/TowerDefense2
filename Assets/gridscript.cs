@@ -32,28 +32,4 @@ public class gridscript : MonoBehaviour {
     }
 
 }
-//public class gridscript : MonoBehaviour
-//{
-//    public GameObject Tower;
 
-//    // Update is called once per frame
-//    void Update()
-//    {
-//    }
-//    private bool CanPlaceTower()
-//    {
-//        return Tower == null;
-//    }
-//    //1
-//    void OnMouseUp()
-//    {
-//        //2
-//        if (CanPlaceTower())
-//        {
-//            //3
-//            Tower = (GameObject)
-//              Instantiate(Tower, transform.position, Quaternion.identity);
-//        }
-//    }
-
-//}
